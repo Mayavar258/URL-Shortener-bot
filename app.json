@@ -6,8 +6,8 @@
         "telegram",
         "shortener"
     ],
-    "website": "https://github.com/kevinnadar22/URL-Shortener-bot",
-    "repository": "https://github.com/kevinnadar22/URL-Shortener-bot",
+    "website": "https://github.com/Mayavar258/URL-Shortener-bot",
+    "repository": "https://github.com/Mayavar258/URL-Shortener-bot",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token",
