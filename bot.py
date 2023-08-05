@@ -6,7 +6,7 @@ API_ID = os.environ.get('API_ID')
 API_HASH = os.environ.get('API_HASH')
 BOT_TOKEN = os.environ.get('BOT_TOKEN')
 API_KEY = os.environ.get('API_KEY')
-WEBSITE = os.environ.get('WEBSITE')
+WEBSITE = os.environ.get('https://anlinks.in')
 
 
 try:
@@ -24,9 +24,7 @@ except Exception:
 @bot.on_message(filters.command('start'))
 async def start(bot, message):
     start_msg = f"""
-Hi {message.chat.first_name}!
-
-I'm {WEBSITE} bot. Just send me link and get short link!
+Hi {Anlinks.in} bot. Just send me link and get short link!
 
 Send me a link to short a link with random alias.
 
@@ -55,7 +53,7 @@ async def link_handler(bot, message):
 
 
 async def get_shortlink(link, x):
-    url = f'https://{WEBSITE}/api'
+    url = f'https://{https://anlinks.in}/api'
     params = {'api': API_KEY,
               'url': link,
               'alias': x
